@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form-2 </title>
+</head>
+
+<body>
+    <form action="form2.html" method="get">
+        <fieldset>
+            <legend>
+                <h2> Your address</h2>
+            </legend>
+            <br>
+
+            <label for="fname"> First Name </label>
+            <input type="text" id="fname">
+            <br><br>
+            <label for="lname"> Last Name </label>
+            <input type="text" id="lname">
+            <br> <br>
+            <label for="street"> Street </label>
+            <input type="text" id="street">
+            <br> <br>
+            <label for="city"> City</label>
+            <input type="text" id="city">
+
+            <br>
+
+        </fieldset>
+    </form>
+
+
+    <form action="form2.html" method="get">
+        <fieldset>
+
+            <legend>
+                <h2> Additional Details </h2>
+
+            </legend>
+            <label for="bioghraphy"> Bioghraphy </label>
+            <textarea name="bioghraphy" id="bioghraphy" cols="30" rows="10" placeholder="write here"></textarea>
+
+            <br><br>
+
+            <label for="image"> Image </label>
+            <input type="file" name="Image" id="image">
+
+            <br><br>
+
+            <label for="age"> Age Group </label>
+            <input type="number" name="Age-group" id="age" min="0" max="9"> years
+        </fieldset>
+    </form>
+
+
+
+
+    <form action="form2.html" method="get">
+        <fieldset>
+            <legend>
+                <h2> Intersets </h2>
+            </legend>
+            <label for="hobbies"> Hobbies
+                <select name="Hobbies" id="hobbies">
+                    <option value="soccer"> Playing Soccer </option>
+                    <option value="dancing"> Dancing </option>
+                    <option value="gardening"> Gardening </option>
+                    <option value="movies"> Watching movies </option>
+                </select>
+            </label>
+            <br><br>
+
+            <label for="car"> Favorite Car? </label>
+            <input type="number" id="car" maxlength="5" placeholder="volvo">
+          
+            <br><br>
+
+            <label for="transport"> Favorite Puplic transport </label>
+            <select name="transport" id="transport">
+                <optgroup label="Ground">
+                    <option value="train"> Train </option>
+                    <option value="bus"> Bus </option>
+                </optgroup>
+                <optgroup label="Water">
+
+                </optgroup>
+            </select>
+
+            <br><br>
+
+
+
+        </fieldset>
+
+
+    </form>
+</body>
+
+</html>

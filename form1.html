@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form-1 </title>
+</head>
+
+<body>
+    <fieldset>
+        <form action="form1.html" method="get">
+
+            <h1> Your informatin </h1>
+
+            <label for="name">Your Name </label>
+            <input type="text" name=" name" id="name" required>
+            <br><br>
+
+            <label for="address"> Delivery Address:</label> <br>
+            <textarea name="address" id="address" cols="30" rows="10">Amman </textarea>
+
+            <h1> Your Order </h1>
+
+
+            <label for="Pizza-Topping"> Pizza Topping:</label>
+
+                <input type="radio" id="Pizza-Topping" name="Pizza-Topping" value="Supreme"> Supreme
+                <input type="radio" id="Pizza-Topping" name="Pizza-Topping" value="vegetarian"> Vegetarian
+                <input type="radio" id="Pizza-Topping" name="Pizza-Topping" value="hawaaiian"> Hawaaiian
+            
+            <br><br>
+
+            <label for="extra"> Extra: </label>
+
+                <input type="checkbox" id="extra" name="extra1" value="cheese"> Cheese
+                <input type="checkbox" id="extra" name="extra2" value="olives"> Olives
+                <input type="checkbox" id="extra" name="extra3" value="salame"> Salami
+            
+            <br><br>
+
+            <label for="sause"> Pizza Sause: </label>
+
+            <select name="sause" id="sause">
+
+                <optgroup label="select sause"> select sause
+
+                    <option value="Tomato"> Tomato </option>
+                    <option value="Barbcu"> Barbecu </option>
+                </optgroup>
+            </select>
+            <br><br>
+
+            <input type="submit" value="Order">
+
+        </form>
+
+    </fieldset>
+</body>
+
+</html>
