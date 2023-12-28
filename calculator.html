@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculator </title>
+    <style>
+        div {
+            border: 5px solid green;
+            height: 50vh;
+            width: 50%;
+            margin: auto;
+            text-align: center;
+        }
+
+       div * {
+            height: 50px;
+            margin: 10px;
+        }
+        input , button , span{
+            outline: 2px solid salmon;
+        }
+        #result{
+            height: 20px;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    
+<div>
+        <input type="number" name="num1" id="numberOne" placeholder="enter number 1">
+        <br>
+        <input type="number" name="num2" id="numberTwo" placeholder="enter number 2">
+        <br>
+        <button onclick="multiply()"> Multiply</button>
+        <button onclick="divide()"> Divide </button>
+        <br>
+        <!-- <button id="result"> Result </button> -->
+        <span id="result"> 0 </span>
+
+    </div>
+
+
+    <script>
+
+
+        function multiply() {
+            var num1 = document.getElementById("numberOne").value;
+            var num2 = document.getElementById("numberTwo").value;
+            const x = num1 * num2;
+            document.getElementById("result").innerHTML = x;
+
+        }
+        function divide() {
+            var num1 = document.getElementById("numberOne").value;
+            var num2 = document.getElementById("numberTwo").value;
+            const y = num1 / num2;
+            document.getElementById("result").innerHTML = y;
+
+        }
+    </script>
+</body>
+
+</html>
